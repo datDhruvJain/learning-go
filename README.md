@@ -6,6 +6,11 @@ Using this source to learn stuff quickly: https://miek.nl/go
 
 By the way GO is a pass by value language. Arrays are also Passed by value, only the slices are pass by reference (till now)
 
+for go getting with a private repo:
+```shell
+env GIT_TERMINAL_PROMPT=1 go get github.com/examplesite/myprivaterepo
+```
+
 <details markdown = "1"> 
 <summary>Anonymous functions in go aka fuction as values</summary>
 
