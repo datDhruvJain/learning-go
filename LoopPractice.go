@@ -1,4 +1,5 @@
 package main
+// change to LoopPractice later?
 
 import "fmt"
 
