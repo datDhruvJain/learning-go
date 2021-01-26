@@ -90,7 +90,3 @@ func Map(x func(int) int, ls []int) {
 func doSomething(x int) int {
 	return x * 2
 }
-
-func main() {
-	StackMain()
-}
