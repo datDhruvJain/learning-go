@@ -6,7 +6,6 @@ import (
 	"github.com/datdhruvjain/learning-go/even"
 )
 
-func main() {
-
-	fmt.Println(even.Even(12))
+func evenMain() {
+	fmt.Println(even.Even(4))
 }
