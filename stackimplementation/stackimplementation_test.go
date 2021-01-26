@@ -5,41 +5,32 @@ import (
 	"testing"
 )
 
-/*func TestStack(t *testing.T) {
-
-	ls := Stack(5)
-	if len(ls) != 5 {
-		t.Log("The test array created is not correct")
-	}
-
-	PushStack(9, ls)
-	PushStack(1, ls)
-	PushStack(2, ls)
-	PushStack(3, ls)
-	PushStack(4, ls)
-	PushStack(5, ls)
-
-	if PopStack(ls) != 5 {
-		t.Log("Pop() return value wrong (1st location)")
-	}
-	fmt.Println(ls)
-	fmt.Println(PopStack(ls))
-	fmt.Println(PopStack(ls))
-	fmt.Println(PopStack(ls))
-	fmt.Println(ls)
-	fmt.Println(PopStack(ls))
-}
-*/
-
 func TestCreateStack(t *testing.T) {
+	fmt.Println("\nCreating new Stack of size 10")
 	s := new(Stack)
 	s.New(10)
+	fmt.Print("\nCreated new stack, len: ")
 	fmt.Println(len(s.stk))
+	fmt.Println()
 }
 
 func TestPush(t *testing.T) {
 	s := new(Stack)
 	s.New(5)
 	s.PushStack(12)
+	s.PushStack(3)
+	s.PushStack(23)
+	fmt.Printf("The stack after pushing elements is %v\n", s.stk)
+}
+
+// Demonstrating how Examples work in GOlang
+func ExamplePushStack() {
+	s := new(Stack)
+	s.New(5)
+	s.PushStack(12)
+	s.PushStack(3)
+	s.PushStack(23)
 	fmt.Println(s.stk)
+	// Output:
+	// [23 3 12 0 0]
 }

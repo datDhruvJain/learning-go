@@ -4,6 +4,7 @@ type Stack struct {
 	stk []int
 }
 
+// Create new stack
 func (s *Stack) New(len int) {
 	var st = make([]int, len)
 	s.stk = st
@@ -17,6 +18,7 @@ func (s *Stack) PushStack(e int) {
 	s.stk[0] = e
 }
 
+// Pop the first element from the stack
 func PopStack(stack []int) (e int) {
 	e = stack[0]
 	for i := 0; i < len(stack)-1; i++ {
